@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayan Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>SAYAN</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="portfolio.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Service.html">Services</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="showDropdownMenu()"></i>
+        </div>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="./About.html">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="hideDropdownMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <!-- Left Image -->
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="PHOTO-2025-01-19-01-09-38.jpg" alt="Main Image">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>SAYAN</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    I'm a <span></span>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perferendis quas consectetur possimus maxime!
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/SayAn1-dls"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100085051226980"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/sayan-bhattacharya-b78529318/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <!-- Button for Download -->
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="" target="_blank" class="image-button">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Library Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+    <!-- JavaScript for Menu -->
+    <script>
+        function showDropdownMenu() {
+            const dropdown = document.querySelector(".dropdown");
+            dropdown.style.transform = "translateY(0px)"; // Show menu
+        }
+        function hideDropdownMenu() {
+            const dropdown = document.querySelector(".dropdown");
+            dropdown.style.transform = "translateY(-500px)"; // Hide menu
+        }
+    </script>
+</body>
+</html>

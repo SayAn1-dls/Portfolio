@@ -1,0 +1,96 @@
+/* Root Variables for Colors */
+:root {
+    --background-gradient: linear-gradient(to right, #D4AF37, #8B4513); 
+    --text-gradient: linear-gradient(to right, #000000, #4B4B4B); 
+    --input-bg-color: #2F2F2F;
+    --input-border-color: #4A4A4A;
+    --input-text-color: #FFFFFF;
+    --button-hover-color: #C39854; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient);
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section {
+    background: var(--background-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    font-size: 1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--input-text-color);
+    opacity: 0.7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #C39854; 
+    background-color: #1F1F1F;
+    box-shadow: 0 0 5px #C39854;
+}
+
+.btn {
+    padding: 15px 20px;
+    background-color: #D4AF37; 
+    color: #121212; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05); 
